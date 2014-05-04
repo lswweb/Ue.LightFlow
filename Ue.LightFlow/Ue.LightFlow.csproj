@@ -47,6 +47,7 @@
     <Compile Include="Commanding\ICommandService.cs" />
     <Compile Include="Commanding\Impl\DefaultCommandService.cs" />
     <Compile Include="ErrorCode.cs" />
+    <Compile Include="Infrastructure\Components\ObjectContainer.cs" />
     <Compile Include="Infrastructure\Extensions\ExceptionExensions.cs" />
     <Compile Include="Infrastructure\Components\IObjectContainer.cs" />
     <Compile Include="Infrastructure\Components\LifeStyle.cs" />
