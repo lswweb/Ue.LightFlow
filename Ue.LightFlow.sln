@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ue.LightFlow", "Ue.LightFlow.csproj", "{1BE35E04-65A6-4834-ADB6-A940C1A8A950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ue.LightFlow.Tests", "..\Ue.LightFlow.Tests\Ue.LightFlow.Tests.csproj", "{C0EAFCF2-4849-4CAB-945F-91D242A4D2DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ue.LightFlow.Samples", "..\Ue.LightFlow.Samples\Ue.LightFlow.Samples.csproj", "{96F0B55A-F33A-4F40-9AA6-9567DE0A9220}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BE35E04-65A6-4834-ADB6-A940C1A8A950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE35E04-65A6-4834-ADB6-A940C1A8A950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE35E04-65A6-4834-ADB6-A940C1A8A950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE35E04-65A6-4834-ADB6-A940C1A8A950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0EAFCF2-4849-4CAB-945F-91D242A4D2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0EAFCF2-4849-4CAB-945F-91D242A4D2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0EAFCF2-4849-4CAB-945F-91D242A4D2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0EAFCF2-4849-4CAB-945F-91D242A4D2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F0B55A-F33A-4F40-9AA6-9567DE0A9220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F0B55A-F33A-4F40-9AA6-9567DE0A9220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F0B55A-F33A-4F40-9AA6-9567DE0A9220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F0B55A-F33A-4F40-9AA6-9567DE0A9220}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
