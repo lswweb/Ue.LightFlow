@@ -3,15 +3,17 @@
 namespace Ue.LightFlow.Infrastructure.Components
 {
     /// <summary>
-    /// Ioc容器
+    /// Ioc服务
     /// </summary>
     public class ObjectContainer
     {
-        /// <summary>Represents the current object container.
+        /// <summary>
+        /// 当前ioc容器
         /// </summary>
         public static IObjectContainer Current { get; private set; }
 
-        /// <summary>Set the object container.
+        /// <summary>
+        /// 设置ioc容器
         /// </summary>
         /// <param name="container"></param>
         public static void SetContainer(IObjectContainer container)

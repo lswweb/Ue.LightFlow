@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
@@ -46,12 +47,20 @@
     <Compile Include="Commanding\ICommandHandler.cs" />
     <Compile Include="Commanding\ICommandService.cs" />
     <Compile Include="Commanding\Impl\DefaultCommandService.cs" />
+    <Compile Include="Configurations\IConfiguration.cs" />
+    <Compile Include="Configurations\Impl\Sections.cs" />
+    <Compile Include="Configurations\Impl\DefaultConfiguration.cs" />
     <Compile Include="ErrorCode.cs" />
+    <Compile Include="Infrastructure\Components\ComponentAttribute.cs" />
     <Compile Include="Infrastructure\Components\ObjectContainer.cs" />
     <Compile Include="Infrastructure\Extensions\ExceptionExensions.cs" />
     <Compile Include="Infrastructure\Components\IObjectContainer.cs" />
     <Compile Include="Infrastructure\Components\LifeStyle.cs" />
     <Compile Include="Infrastructure\Logging\ILogger.cs" />
+    <Compile Include="Infrastructure\Logging\ILoggerFactory.cs" />
+    <Compile Include="Infrastructure\Logging\Impl\NullLogger.cs" />
+    <Compile Include="Infrastructure\Logging\Impl\NullLoggerFactory.cs" />
+    <Compile Include="Infrastructure\Logging\LogLevel.cs" />
     <Compile Include="Infrastructure\Worker.cs" />
     <Compile Include="Infrastructure\WorkerQueue.cs" />
     <Compile Include="LightFlowException.cs" />
@@ -66,9 +75,10 @@
     <Compile Include="Messaging\SendResult.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Configurations\" />
     <Folder Include="Infrastructure\Caching\" />
-    <Folder Include="Infrastructure\Logging\Impl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Configurations\Impl\LightFlow.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

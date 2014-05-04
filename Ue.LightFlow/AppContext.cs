@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using Ue.LightFlow.Configurations;
 
 namespace Ue.LightFlow
 {
@@ -7,37 +6,26 @@ namespace Ue.LightFlow
     {
         #region 构造及字段
 
-        //private IContainer container;
+        private readonly IConfiguration configuration;
 
-        //public AppContext(IContainer container)
-        //    : this(container, ConfigurationManager.AppSettings["ue_cqrs_settigs_path"]) { }
-
-        //public AppContext(IContainer container, string configPath)
-        //    : this(container, ConfigurationFactory.Build(configPath)) { }
-
-        //public AppContext(IContainer container, IConfiguration configuration)
-        //{
-        //    if (configuration == null)
-        //    {
-        //        throw new ArgumentNullException("configuration");
-        //    }
-
-        //    this.container = new DefaultContainer(configuration,container);
-        //}
+        public AppContext(IConfiguration configuraion)
+        {
+            this.configuration = configuration;
+        }
 
         #endregion
 
-        public bool IsStart { get; private set; }
+        public bool IsAlive { get; private set; }
 
         public void Start()
         {
-            this.IsStart = true;
+            this.IsAlive = true;
             AppContext.currentContext = this;
         }
 
         public void Stop()
         {
-            this.IsStart = false;
+            this.IsAlive = false;
             AppContext.currentContext = null;
         }
 
